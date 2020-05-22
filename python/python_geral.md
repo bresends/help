@@ -1,31 +1,31 @@
 # Conda Virtual Environments 
 
-```
+```shell
 #Criando 
 conda create -n nomes_ambiente python=3.8
 ```
 
-```
+```shell
 # Ativando 
 activate nome_ambiente
 ```
 
-```
+```shell
 # Mostrando os pacotes do ambiente
 conda list
 ```
 
-```
+```shell
 # Mostrando todos os ambientes
 conda env list 
 ```
 
-```
+```shell
 # Saindo do ambiente 
 deativate nome_ambiente
 ```
 
-```
+```shell
 # Deletando 
 conda env remove -n nome_ambiente
 ```
