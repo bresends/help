@@ -1,2 +1,2 @@
-# python_help
- Project related to help files of the Python language
+# Help
+This repo contains relevant code snippets of the languages I work with
