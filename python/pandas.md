@@ -35,25 +35,30 @@ df_list['Net Income'].is_monotonic_increasing
 ```
 # Importando um dataframe 
 
+## De uma URL
 ```python
-# Importando CSV de uma url (dando nome do header)
-
 user_cols = ['user_id', 'age', 'gender', 'occupation', 'zip_code']
 df = pd.read_csv('http://bit.ly/movieusers', sep='|', header=None, names = user_cols)
-
-# Importando CSV de um localização do Google Drive
-df = pd.read_csv('/content/drive/My Drive/Colab Notebooks/us_companies.csv')
-
-# Se quiser abrir determinando quais são os index
-pd.read_csv('processed.csv', index_col='o_index_desejado')
 ```
 
-# Header
+# Alterando o Header
+
+## Passando Coluna com todos os nomes
 
 ```python
-#Mudando nomes específicos
-df.rename(columns={'occupation': 'profissão', 'age': 'idade'}, inplace=True) #ou põe o inplace ou joga isso em uma variável
+#Trocando apenas alguns
+df = df.rename(columns = {"a":"c", "b": "d"})
+```
 
+## Mudando nomes específicos
+
+```python
+df.rename(columns={'occupation': 'profissão', 'age': 'idade'}, inplace=True)
+```
+
+## Aplicando funções no Header
+
+```python
 #Ex: Fazendo tudo ficar Uppercase
 df.columns = [x.lower() for x in df.columns]
 
