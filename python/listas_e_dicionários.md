@@ -17,7 +17,6 @@ lanche.insert(0,'pão de queijo') # dá a posição e depois o item a ser adicio
 # Assim joga a lista
 sobremesa = ['sorvete']
 sobremesa.append(lanche)
-print(sobremesa)
 
 # Assim joga só os valores
 sobremesa = ['sorvete']
@@ -30,7 +29,6 @@ sobremesa.extend(lanche)
 # Aqui ele vai na lista e remove o item que vc desejar (independente da posição do mesmo)
 
 lanche.remove('broa')
-print(lanche)
 
 # Checando se o item está na lista antes de apagar pra não dar erro
 if 'pudim' in lanche:
@@ -72,7 +70,6 @@ def discount(item):
     return item * (0.9)
 
 final_prices = [discount(i) for i in prices]
-print(final_prices)
 ```
 
 # Dicionários
@@ -164,7 +161,6 @@ dict[0].update({'nome':'Tião', 'idade':'55'})
 
 ```python
 del dados['idade']
-print(dados)
 ```
 
 ## Fazendo Loops em Dicionários
