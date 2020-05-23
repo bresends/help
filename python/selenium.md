@@ -116,3 +116,24 @@ find_elements_by_tag_name('<tag_name>')
 ```python
 find_elements_by_class_name('<class_name>')
 ```
+
+# Cookies
+
+## Salvando 
+
+```python
+driver = selenium.webdriver.Chrome()
+driver.get("https://bastter.com/mercado/cadastro") 
+pickle.dump( driver.get_cookies() , open("cookies.pkl","wb"))
+```
+
+## Importando
+
+> Com uma url já aberta no navegador
+
+```python
+for cookie in pickle.load(open("cookies.pkl", "rb")):
+    if 'expiry' in cookie:
+        del cookie['expiry']
+    driver.add_cookie(cookie)
+```
