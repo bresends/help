@@ -97,6 +97,7 @@ df['age'].sort_values(by=['Coluna'], inplace=True, ascending=True)
 
 # Filtrando Itens
 
+## Forma Simples
 ```python
 # Simples condição
 df[df['Ticker'] == 'Qualquer Coisa']
@@ -106,4 +107,15 @@ df[ (df['Coluna_1'] == False) & (df['Coluna_2'] > 2) ]
 
 # Filtrando  os NaN
 filtered_df = df[df['var2'].isnull()]
+```
+
+## Forma Elaborada
+
+```python
+filtro = (df['MS'] == False) & (df['MBI'] == False) & (df['MB']) & (df['CNN'] == False)
+
+df = df_merged.loc[filtro]
+
+# Contra-Filtro 
+df.loc[~filtro] # Vai me dar o DF de todas as mulheres que não são estudantes
 ```
