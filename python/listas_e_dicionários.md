@@ -1,18 +1,19 @@
-# Adicionando itens 
+# Listas
+
+## Adicionando itens 
 
 ```python
-# Adicionando item em uma lista no final (Posso por uma lista também)
+# No fim
 lanche = ['pão', 'pudim', 'broa']
 lanche.append('bolo')
 
-
-# Adicionando item em uma lista num lugar específico 
+# Em posição específica
 lanche.insert(0,'pão de queijo') # dá a posição e depois o item a ser adicionado
 ```
 
-```python
-# Adicionando uma lista dentro de outra lista, mas como elementos individuais, não outra lista
+## Adicionando uma lista dentro de outra lista, mas como elementos individuais, não outra lista
 
+```python
 # Assim joga a lista
 sobremesa = ['sorvete']
 sobremesa.append(lanche)
@@ -23,8 +24,9 @@ sobremesa = ['sorvete']
 sobremesa.extend(lanche)
 ```
 
+## Apagando itens
 ```python
-## Apagando pelo conteúdo ##
+
 # Aqui ele vai na lista e remove o item que vc desejar (independente da posição do mesmo)
 
 lanche.remove('broa')
@@ -35,9 +37,8 @@ if 'pudim' in lanche:
   lanche.remove('pudim')
 ```
 
+## Apagando itens
 ```python
-## Apagando pelo índice ##
-
 # Pop
 lanche.pop(0) #se estiver sem o índice, ele remove o último elemento da lista
 
@@ -77,6 +78,7 @@ print(final_prices)
 # Dicionários
 
 ## Criando um dicionário
+
 ```python
 
 # Isolado
@@ -121,6 +123,7 @@ dados['Sexo'] = 'M'
 ```
 
 ## Acessando valores individuais
+
 ```python
 # Posso puxar direto
 print(dict[0]['nome'])
@@ -180,5 +183,51 @@ for k in filmes.keys():
 for v in filmes.values():
   print(v)
 
+```
+
+# Dictionary Comprehension
+
+```python
+# Multiplicando Valores por 2
+double_dict1 = {k*2:v*2 for (k,v) in dict1.items()}
+
+# Filtrando valores
+new_dict = {key: value for key, value in a_dict.items() if value <= 3 if value > 1 }
+```
+
+# Sets
+
+## Criando set vazio
+```python
+x = set()
+```
+
+## Ordendando um set
+```python
+.sorted(variable)
+```
+
+## Adicionando Itens
+```python
+# Item único
+x.add()
+
+#Adicionando uma lista dentro de um set
+x.update(['item1','item2','item3'])
+```
+## Removendo elemento de um set
+```python
+x.remove() 
+x.discard() # não dá erro se o item não estiver na lista
+```
+
+## Criando lista com itens que estão em dois sets ao mesmo tempo
+```python
+lista = x.intersection(x,z)
+```
+
+## Criando lista com os valores que estão em x e não estão em y 
+```python
+lista = x.difference(y) # Cuidado com a ordem se é x-y ou y-x (totalmenete diferente)
 ```
 
