@@ -119,3 +119,32 @@ df = df_merged.loc[filtro]
 # Contra-Filtro 
 df.loc[~filtro] # Vai me dar o DF de todas as mulheres que não são estudantes
 ```
+
+# Duplicatas
+
+## Visualisando 
+
+### Linhas iguais repetidas
+
+```python
+df.duplicate().sum()
+```
+
+### Coluna repetida
+
+```python
+df['Coluna'].duplicated().sum()
+```
+
+### Mostrando quais são os itens repetidos
+```python
+# Filtrando valores
+df.loc[df['Coluna'].duplicated(keep='first'), :] 
+```
+
+## Deletando
+
+```python
+df.drop_duplicates(keep='first')
+data.drop_duplicates(subset = "First Name", keep = False, inplace = True)
+```
