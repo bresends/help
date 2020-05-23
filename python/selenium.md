@@ -92,33 +92,27 @@ element.is_enabled()
 
 # Encontrando elementos 
 
-### ID
 ```python
 find_element_by_id('<id>')
 ```
 
-### Nome
 ```python
 find_element_by_name('<name>')
 ```
 
-### Texto
 ```python
 find_element_by_link_text('<text>')
 
 ```
 
-### CSS
 ```python
 find_element_by_css_selector('<css_selector>')
 ```
 
-### Tag
 ```python
 find_elements_by_tag_name('<tag_name>')
 ```
 
-### Classe
 ```python
 find_elements_by_class_name('<class_name>')
 ```
