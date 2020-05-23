@@ -78,11 +78,37 @@ print(final_prices)
 
 ## Criando um dicionário
 ```python
+
+# Isolado
+
 filmes = {
     'nome':'Pulp Fiction',
     'ano': 1990,
     'genero':'ação'
 }
+
+# Dentro de uma lista
+
+brasil = [
+          {
+            'Estado':'Rio de Janeiro',
+            'UF': 'RJ',
+            'Capital':'Rio de Janeiro'
+          },
+
+          {
+            'Estado':'Minas Gerais',
+            'UF': 'MG',
+            'Capital':'Belo Horizonte'
+          },
+
+          {
+            'Estado':'Goiás',
+            'UF': 'GO',
+            'Capital':'Goiânia'
+          }
+
+]
 ```
 
 ## Adicionando Itens
