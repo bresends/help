@@ -47,7 +47,7 @@ del lanche[0]
 
 # List Compreehension
 
-> Lógica: [(x*x) for x in lista]
+> Lógica: ``` [(x*x) for x in lista] ```
 
 ```python
 # Fazendo replace em uma string
@@ -73,3 +73,26 @@ def discount(item):
 final_prices = [discount(i) for i in prices]
 print(final_prices)
 ```
+
+# Dicionários
+
+## Criando um dicionário
+```python
+filmes = {
+    'nome':'Pulp Fiction',
+    'ano': 1990,
+    'genero':'ação'
+}
+```
+
+## Acessando valores individuais
+```python
+# Posso puxar direto
+print(pessoas_dict[0]['nome'])
+
+# ou usar o método .get()
+print(pessoas_dict[0].get('nome'))
+
+# Vantagem do get é que se a key não existir, ele retorna none mas não dá erro
+```
+
