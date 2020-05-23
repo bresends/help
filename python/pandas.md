@@ -35,10 +35,15 @@ df_list['Net Income'].is_monotonic_increasing
 ```
 # Importando um dataframe 
 
-## De uma URL
 ```python
 user_cols = ['user_id', 'age', 'gender', 'occupation', 'zip_code']
 df = pd.read_csv('http://bit.ly/movieusers', sep='|', header=None, names = user_cols)
+```
+
+# Exportando um dataframe
+
+```python
+df.to_csv('/content/drive/My Drive/Colab Notebooks/us_companies.csv', index=False)
 ```
 
 # Alterando o Header
@@ -59,7 +64,46 @@ df.rename(columns={'occupation': 'profissão', 'age': 'idade'}, inplace=True)
 ## Aplicando funções no Header
 
 ```python
+df.columns = df.columns.str.replace('I', 'Txengas')
+# Vai trocar todos os Is por Txngas no Header
+```
+
+```python
 #Ex: Fazendo tudo ficar Uppercase
 df.columns = [x.lower() for x in df.columns]
 
+```
+
+# Deletando 
+
+## Colunas
+
+```python
+df = df.drop(['Sexocupation','Soma'], axis=1)
+```
+
+## Linhas
+
+```python
+df = df.drop(2, axis=0)
+df = df.drop([0,1], axis = 0)
+```
+
+# Sorting
+
+```python
+df['age'].sort_values(by=['Coluna'], inplace=True, ascending=True)
+```
+
+# Filtrando Itens
+
+```python
+# Simples condição
+df[df['Ticker'] == 'Qualquer Coisa']
+
+# Multiplas condições
+df[ (df['Coluna_1'] == False) & (df['Coluna_2'] > 2) ]
+
+# Filtrando  os NaN
+filtered_df = df[df['var2'].isnull()]
 ```
