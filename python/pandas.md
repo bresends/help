@@ -148,3 +148,75 @@ df.loc[df['Coluna'].duplicated(keep='first'), :]
 df.drop_duplicates(keep='first')
 data.drop_duplicates(subset = "First Name", keep = False, inplace = True)
 ```
+
+# Aplicando Funções
+
+## Séries
+```python
+def update_value(value):
+  return value + 1 
+
+df['user_id'] = df['user_id'].apply(update_value)
+```
+
+## DF completo
+
+```python
+# Transforma todos os dados em string
+df = df.applymap(str)
+```
+
+# Unindo DataFrames
+
+## Apenas colando um no fundo do outro
+
+```python
+df = pd.concat([df1, df2])
+df = df.reset_index(drop=True) # Reseta os Indexes pra juntar tudo começando do zero
+```
+
+## Merge
+
+```python
+
+df_resultado = pd.merge(df_1, df_2, how='inner')
+df_resultado = pd.merge(df_1, df_2, how='outer')
+
+# Se eu quiser unir apenas por 1 das colunas 
+df_resultado = pd.merge(df_1, df_2, on=['Coluna_de_União','Coluna_de_União_2'])
+
+# Se o nome das colunas não bater, posso fazer na mão 
+df_resultado = pd.merge(df_1, df_2, left_on=['nome_respectivo_df1'], right_on=['nome_respectivo_df2'])
+
+# Se quiser fazer o merge pelos indexes
+df_resultado = pd.merge(df_1, df_2, left_index=True, right_index=True)
+
+# Se quiser por nome nos indicadores de colunas
+
+df_resultado = pd.merge(df_1, df_2, on=['Whatever'], suffixes=('_left', '_right')) 
+df_merged = pd.merge(df_tb, df_guru, how='outer', on = 'Ticker', indicator=True, suffixes=('_TB', '_Guru'))
+```
+
+# Comparando Dataframes
+
+## Encontrando Itens em Comum nas Duas (Estão em 1 e no outro)
+
+```python
+df = pd.merge(df1, df2, how='inner', indicator=False)
+```
+## Encontrando LINHAS exclusivas de um (Linhas de df1 que não estão em df2)
+```python
+df = pd.merge(df1, df2, how = 'outer', indicator=True).loc[lambda x : x['_merge']=='left_only']
+```
+
+## Descartando a intersecção (jogando fora todos o itens repetidos em ambos)
+
+```python
+pd.concat([df1,df2]).drop_duplicates(keep=False)
+```
+
+## Encontrando todos os valores em uma coluna de DFs que não são comuns em ambos
+
+```python
+set(df1['Temp']).symmetric_difference(df2['Temp'])
+```
