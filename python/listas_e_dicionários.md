@@ -85,14 +85,74 @@ filmes = {
 }
 ```
 
+## Adicionando Itens
+
+```python
+dados = {'nome':'Pedro','idade':25}
+
+#Adicionando uma 'Coluna'
+dados['Sexo'] = 'M'
+```
+
 ## Acessando valores individuais
 ```python
 # Posso puxar direto
-print(pessoas_dict[0]['nome'])
+print(dict[0]['nome'])
 
 # ou usar o método .get()
-print(pessoas_dict[0].get('nome'))
+print(dict[0].get('nome'))
 
 # Vantagem do get é que se a key não existir, ele retorna none mas não dá erro
+```
+
+# Acessando todos os valores
+
+```python
+# Keys =  Pense nelas como índices de uma tabela
+print(filmes.keys())
+
+# Values = São os valores contidos dentro das keys
+print(filmes.values())
+
+# Items = Soma de cada par de key e value de um dicionário
+print(filmes.items())
+```
+
+## Modificando valores
+
+### Individuais
+
+```python
+dict[0]['nome'] = 'Maria'
+```
+### Vários ao mesmo tempo
+
+```python
+dict[0].update({'nome':'Tião', 'idade':'55'})
+```
+
+## Removendo valores
+
+```python
+del dados['idade']
+print(dados)
+```
+
+## Fazendo Loops em Dicionários
+
+```python
+# Mostrando todos os items (que são a combinação dos valores de keys e values juntos)
+
+for k,v in filmes.items():
+  print(f'A key [{k}] tem como valor [{v}]')
+
+# Mostrando apenas os keys de um dicionário
+for k in filmes.keys():
+  print(k)
+
+# Mostrando apenas os values de um dicionário
+for v in filmes.values():
+  print(v)
+
 ```
 
