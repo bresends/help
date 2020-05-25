@@ -51,12 +51,17 @@ git log
 git branch
 ```
 
-## Retornando a uma versão anterior
+## Retornando a uma versão anterior (pra olhar) 
 ```bash
-git checkout <codigo_commit>
+git checkout <hash_commit>
 ```
 
 ## Voltando tudo pro último commit
 ```bash
 git checkout master
+```
+
+# Retornando em definitivo para um commit anterior
+```bash
+git reset --hard <hash_commit>
 ```
