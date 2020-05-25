@@ -35,19 +35,23 @@ git init
 git status
 ```
 
-## Jogando arquivos para o container de adição 
-
-```bash
-git add *
-```
-
 ## Commit
 ```bash
-git commit -m "Comentário" 
+git commit -am "Comentário" 
 ```
 
 ## Mostrando histórico dos commits
 
 ```bash
 git log
+```
+
+#Mostrando branch onde estamos trabalhando
+```bash
+git branch
+```
+
+## Retornando a uma versão anterior
+```bash
+git checkout <codigo_commit>
 ```
