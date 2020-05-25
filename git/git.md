@@ -55,3 +55,8 @@ git branch
 ```bash
 git checkout <codigo_commit>
 ```
+
+## Voltando tudo pro último commit
+```bash
+git checkout master
+```
