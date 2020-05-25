@@ -14,12 +14,12 @@ git config --global user.email "bruno.resende@gmx.com "
 ## Criando arquivos
 
 ```bash
-touch arquivo.txt arquivo2.txt
+touch <arquivo.txt> <arquivo2.txt>
 ```
 
 ## Criando pastas
 ```bash
-mkdir nome_pasta
+mkdir <nome_pasta>
 ```
 
 
