@@ -10,3 +10,44 @@ git config --global user.name "Bruno"
 git config --global user.email "bruno.resende@gmx.com "
 
 ```
+# Comandos Básicos Bash
+## Criando arquivos
+
+```bash
+touch arquivo.txt arquivo2.txt
+```
+
+## Criando pastas
+```bash
+mkdir nome_pasta
+```
+
+
+# Comandos Básicos GIT
+## Criando Repositório dentro de uma pasta
+
+```bash
+git init
+```
+
+## Mostrando o que mudou no projeto
+```bash
+git status
+```
+
+## Jogando arquivos para o container de adição 
+
+```bash
+git add *
+```
+
+## Commit
+```bash
+git commit -m "Comentário" 
+```
+
+## Mostrando histórico dos commits
+
+```bash
+git log
+```
