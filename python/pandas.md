@@ -2,54 +2,54 @@
 
 ```python
 "Conta quantos itens de cada tipo tem dentro de uma série"
+
 df['coluna_desejada'].value_counts()
 ```
 
 ```python
-# Diz quantas linhas e colunas tem um DF
+" Diz quantas linhas e colunas tem um DF"
 df.shape 
 ```
 
 ```python
-# Diz qual o tipo 
+" Diz qual o tipo "
 df.info() # DF
 df.dtypes # Série
 ```
 
 ```python
-# Mostra o nomes das colunas de um datafram
+" Mostra o nomes das colunas de um dataframe "
 df.columns
 ```
 
 ```python
-#Faz média e mediana dos valores 
+"Faz média e mediana dos valores"
 df.describe() 
 ```
 
 ```python
 
-#Joga fora as linhas NaN (que não tem valores)
+"Joga fora as linhas NaN (que não tem valores)"
 df.dropna() 
 ```
 
 ```python
-# Faz a soma de quantos valores nulos (NaN) tem dentro do DataFrame
+" Faz a soma de quantos valores nulos (NaN) tem dentro do DataFrame"
 df['coluna_desejada'].isnull().sum()
 ```
 
 ```python
-# Filtra os valores nulos (NaN) do DF
+" Filtra os valores nulos (NaN) do DF"
 df[df['coluna_desejada'].isnull()]
 ```
 
 ```python
-
-# Resetando o index pra números
+" Resetando o index pra números"
 df = df.reset_index()
 ```
 
 ```python
-# Verificando se os itens de uma série aumentam ou diminiuem estritamente 
+" Verificando se os itens de uma série aumentam ou diminiuem estritamente "
 df_list['Net Income'].is_monotonic_decreasing 
 df_list['Net Income'].is_monotonic_increasing
 ```
