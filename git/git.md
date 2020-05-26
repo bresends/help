@@ -76,4 +76,21 @@ git branch
 git merge <nome_do_branch> 
 ```
 
+# Integração com o GitHub
+
+## Criando Repositório do zero
+> Seguir instruções do GitHub 
+
+## Clonando repositório 
+> Abre o Bash na pasta SUPERIOR a pasta desejada de clonar
+```bash
+git clone <link_git_hub>
+```
+## Fazendo Push 
+```shell
+git push
+```
+
+
+
 
