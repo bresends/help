@@ -48,6 +48,11 @@ df.to_csv('/content/drive/My Drive/Colab Notebooks/us_companies.csv', index=Fals
 
 # Alterando o Header
 
+## Mudando o nome do index(primeira coluna)
+
+```python
+df.index.name == 'Nome'
+```
 ## Passando Coluna com todos os nomes
 
 ```python
