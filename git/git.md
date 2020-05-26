@@ -61,7 +61,19 @@ git checkout master
 git reset --hard <hash_commit>
 ```
 
+## Criando Branch
+```bash
+git checkout -b <nome_branch>
+```
 ## Mostrando branch onde estamos trabalhando
 ```bash
 git branch
 ```
+
+## Fazendo merge de um Branch
+```bash
+# Estando no Master
+git merge <nome_do_branch> 
+```
+
+
