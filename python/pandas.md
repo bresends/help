@@ -1,7 +1,7 @@
 # Comandos úteis
 
 ```python
-# Conta quantos itens de cada tipo tem dentro de uma série
+"Conta quantos itens de cada tipo tem dentro de uma série"
 df['coluna_desejada'].value_counts()
 ```
 
