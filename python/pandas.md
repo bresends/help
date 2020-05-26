@@ -35,11 +35,13 @@ df.dropna()
 
 ```python
 " Faz a soma de quantos valores nulos (NaN) tem dentro do DataFrame"
+
 df['coluna_desejada'].isnull().sum()
 ```
 
 ```python
 " Filtra os valores nulos (NaN) do DF"
+
 df[df['coluna_desejada'].isnull()]
 ```
 
@@ -50,6 +52,7 @@ df = df.reset_index()
 
 ```python
 " Verificando se os itens de uma série aumentam ou diminiuem estritamente "
+
 df_list['Net Income'].is_monotonic_decreasing 
 df_list['Net Income'].is_monotonic_increasing
 ```
