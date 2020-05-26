@@ -46,11 +46,6 @@ git commit -am "Comentário"
 git log
 ```
 
-#Mostrando branch onde estamos trabalhando
-```bash
-git branch
-```
-
 ## Retornando a uma versão anterior (pra olhar) 
 ```bash
 git checkout <hash_commit>
@@ -61,7 +56,12 @@ git checkout <hash_commit>
 git checkout master
 ```
 
-# Retornando em definitivo para um commit anterior
+## Retornando em definitivo para um commit anterior
 ```bash
 git reset --hard <hash_commit>
+```
+
+## Mostrando branch onde estamos trabalhando
+```bash
+git branch
 ```
