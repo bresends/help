@@ -53,9 +53,14 @@ primary key (id)
 )default charset=utf8mb4;
 ```
 
-# Mostrando Tabela 
+# Mostrando Características das Colunas 
 
 ```sql
 describe <table>;
+```
+
+# Mostrando tabela inteira
+```sql
+select * from <table>;
 ```
 
