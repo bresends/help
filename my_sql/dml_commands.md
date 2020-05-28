@@ -14,3 +14,44 @@ values
 insert into pessoas values
 (default,'Adalgiza', '1999-12-30', 'F', '55.2','1.65','Portugal');
 ```
+
+## Alterando Dados 
+
+### Adicionando Coluna na última posição
+```sql
+alter table <table>
+add column varchar(30);
+```
+
+### Adicionando Coluna em uma posição específica
+```sql
+alter table <table>
+add column varchar(30) after <outra_coluna>;
+```
+
+### Mudando tipo de dado na coluna 
+
+```sql
+alter table <table>
+modify column <coluna> varchar(20);
+```
+
+
+### Removendo Coluna
+```sql
+alter table <table>
+drop column <coluna>
+```
+
+### Renomeando coluna
+```sql
+alter table pessoas
+change <column_name> <new_name>;
+```
+
+## Mudando nome da tabela
+
+```sql
+alter table <tabela>
+rename to <new_name>;
+```
