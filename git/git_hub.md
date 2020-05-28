@@ -15,6 +15,7 @@ git push
 
 ## Recebendo alterações (pull)
 ```bash
+git fetch 
 git pull 
 ```
 
