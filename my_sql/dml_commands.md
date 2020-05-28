@@ -1,11 +1,20 @@
 # Inserindo dados na tabela
 
-## Comando Completo
+## Valor único
 ```sql
 insert into pessoas
 (id, nome, nascimento, sexo, peso, altura, nacionalidade)
 values
 ('1', 'Godofredo', '1984-01-02', 'M', '78.5','1.83','Brasil');
+```
+
+## Múltiplos valores
+```sql
+insert into pessoas
+(id, nome, nascimento, sexo, peso, altura, nacionalidade)
+values
+('1', 'Godofredo', '1984-01-02', 'M', '78.5','1.83','Brasil'),
+('2', 'Hudosvaldio', '1978-08-02', 'M', '78.5','1.83', default');
 ```
 
 ## Lista estando na ordem
@@ -37,7 +46,19 @@ alter table <table>
 add <column> <type: e.g. int> first;
 ```
 
----
+
+## Removendo Coluna
+```sql
+alter table <table>
+drop column <coluna>
+```
+
+
+## Renomeando coluna
+```sql
+alter table pessoas
+change <column_name> <new_name>;
+```
 
 ## Mudando tipo de dado na coluna 
 
@@ -46,22 +67,12 @@ alter table <table>
 modify column <coluna> varchar(20);
 ```
 
----
+## Selecionando coluna como primary key 
 
-## Removendo Coluna
 ```sql
-alter table <table>
-drop column <coluna>
+alter table <table_name>
+add primary key(<nome_coluna>);
 ```
-
----
-
-## Renomeando coluna
-```sql
-alter table pessoas
-change <column_name> <new_name>;
-```
----
 
 ## Mudando nome da tabela
 
