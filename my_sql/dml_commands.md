@@ -15,7 +15,9 @@ insert into pessoas values
 (default,'Adalgiza', '1999-12-30', 'F', '55.2','1.65','Portugal');
 ```
 
-## Alterando Dados 
+# Alterando Dados 
+
+## Adicionando Colunas
 
 ### Adicionando Coluna na última posição
 ```sql
@@ -29,25 +31,37 @@ alter table <table>
 add column varchar(30) after <outra_coluna>;
 ```
 
-### Mudando tipo de dado na coluna 
+### Adicionando Coluna na primeira coluna
+```sql
+alter table <table>
+add <column> <type: e.g. int> first;
+```
+
+---
+
+## Mudando tipo de dado na coluna 
 
 ```sql
 alter table <table>
 modify column <coluna> varchar(20);
 ```
 
+---
 
-### Removendo Coluna
+## Removendo Coluna
 ```sql
 alter table <table>
 drop column <coluna>
 ```
 
-### Renomeando coluna
+---
+
+## Renomeando coluna
 ```sql
 alter table pessoas
 change <column_name> <new_name>;
 ```
+---
 
 ## Mudando nome da tabela
 
