@@ -21,7 +21,19 @@ use <nome_database>
 
 ```sql
 create table <nome>(
+nome varchar(30)
 );
+```
+
+# Apagando tabela
+```sql
+drop table <nome>;
+```
+
+## Garantindo ela ser única 
+
+```sql
+create table if not exists <nome>(test int);
 ```
 
 
