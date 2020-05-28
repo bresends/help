@@ -15,8 +15,8 @@ git push
 
 ## Recebendo alterações (pull)
 ```bash
-git fetch 
-git pull 
+git fetch # Não altera. Apenas baixa mudanças para comparar e resolver conflitos
+git pull  # Puxa e faz o merge automático 
 ```
 
 
