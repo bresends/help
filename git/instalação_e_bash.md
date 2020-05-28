@@ -1,6 +1,6 @@
 # Instalação
 
->Instalar o vs code antes. 
+>__Instalar o vs code antes.__ 
 >Desmarcar o gui, selecionar a versão correta do VS Code
 >Git from command line and 3rd Party
 
