@@ -1,4 +1,4 @@
-# Alterando 
+# Alterando Linhas
 
 ## Alterando 1 valor de 1 linha
 
@@ -33,4 +33,16 @@ limit 1;
 
 ```sql
 truncate <table>;
+```
+
+# Alterando colunas
+
+## Fazendo operações matemáticas 
+
+```sql
+select 
+  name,
+  points,
+  (points + 1)*100 as result_points 
+from <table>;
 ```
