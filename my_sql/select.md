@@ -40,6 +40,7 @@ where <coluna_controle> between 'Critério1' and 'Critério2';
 select * from <table>
 where <coluna_controle> in ('Critério1', 'Critério2', 'Critério3');
 ```
+
 # And
 ```sql
 select * from <table>
@@ -95,6 +96,16 @@ select <column>, count(<column_for_count>) from <table>
 group by <column>
 having count(<column_for_count>) > 'z';
 ```
+
+Exemplo
+```sql
+select nacionalidade, count(nacionalidade) from gafanhotos
+where nacionalidade != 'Brasil'
+group by nacionalidade
+having count(nacionalidade) > '3'
+order by nacionalidade;
+```
+
 ## Contando quantidade de registros únicos 
 
 ```sql
