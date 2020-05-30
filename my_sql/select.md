@@ -82,6 +82,27 @@ select max(<coluna>) from <table>;
 select <coluna_nome> max(<coluna>) from <table>;
 ```
 
+## Agrupando Registros (GroupBy)
+
+```sql
+select <coluna> from <table>
+group by <coluna>;
+```
+
+## Agrupando com condicionais
+```sql
+select <column>, count(<column_for_count>) from <table>
+group by <column>
+having count(<column_for_count>) > 'z';
+```
+## Contando quantidade de registros únicos 
+
+```sql
+select <coluna>, count(*) from <table>
+group by <coluna>
+order by <coluna>
+```
+
 
 
 
