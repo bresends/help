@@ -1,6 +1,7 @@
 # Tipos primitivos PostgreSQL
 
 * __Numérico__
+
 	* __Inteiro__
 		* smallInt {2 bytes}
 		* integer {4 bytes}
@@ -23,11 +24,10 @@
 ---
 
 * __Data/Tempo__
-	* Date
-	* DateTime
-	* TimeStamp
-	* Time
-	* Year
+	* date
+	* timeStamp
+	* interval
+	* time
 ---
 * __Literal__
 
