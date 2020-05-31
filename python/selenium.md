@@ -59,6 +59,25 @@ driver.foward()
 driver.find_element_by_xpath('//*[@id="ctl00_mainContent_txtLogin"]') # Tem que trocar as double cotes por singles
 ```
 
+## Colocando o mouse sobre um lugar na página
+
+```sql
+from selenium import webdriver
+from selenium.webdriver.common.action_chains import ActionChains
+ 
+driver = webdriver.Chrome(executable_path="")
+driver.get("https://UrlToOpen")
+ 
+action = ActionChains(driver)
+ 
+firstLevelMenu = driver.find_element_by_id("menu")
+action.move_to_element(firstLevelMenu).perform()
+ 
+secondLevelMenu = driver.find_element_by_xpath("//a[contains(text(),'menu1')]")
+secondLevelMenu.click()
+
+```
+
 ## Preenchendo formulários
 
 ```python
