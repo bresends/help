@@ -1,21 +1,27 @@
-# Tipos primitivos SQL
+# Tipos primitivos PostgreSQL
 
 * __Numérico__
 	* __Inteiro__
-		* TinyInt
-		* SmallInt
-		* Int
-		* MediumInt
-		* BigInt
+		* smallInt {2 bytes}
+		* integer {4 bytes}
+		* bigint {8 bytes}
+
 	* __Real__
-		* Decimal
-		* Float
-		* Double
-		* Real
+		* numeric 
+			* Mais usado pra quantidades exatas mas é lento por ser longo
+		* decimal {user specified}
+		* real {4 bytes}
+		* double precision {8 bytes}
+		
+	* __Contagem__
+		* smallserial {2 bytes - autoincremento}
+		* serial {4 bytes - autoincremento}
+		* bigserial {2 bytes - autoincremento}
+
 	* __Lógico__
-		* Bit
-		* Boolean
+		* boolean (true,false,null)
 ---
+
 * __Data/Tempo__
 	* Date
 	* DateTime
@@ -24,25 +30,26 @@
 	* Year
 ---
 * __Literal__
+
 	* __Caractere__
-		* Char 
-		* VarChar
+		* char (não usado no Posgres)
+		* varchar
+
 	* __Texto__
-		* TinyText
-		* Text
-		* MediumText
-		* LongText
-	* __Binário__
-		* TinyBlob
-		* Blob
-		* MediumBlob
-		* LongBlob
-	* __Coleção__
-		* Enum
-		* Set
+		* text
 ---
+
 * __Espacial__
-	* Geometry
-	* Point
-	* Polygon
-	* MultiPolygon
+	* points
+	* lines
+	* line segments
+	* boxes
+	* paths
+	* poligons
+	* circles
+
+* __Network Adress__
+* __XML__
+* __JSON__
+* __Array__
+* __Composite__
