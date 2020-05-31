@@ -41,11 +41,13 @@ create table if not exists <nome>(test int);
 Exemplo:
 
 ```sql
+create type estado_civil as enum('Solteiro', 'Casado', 'Divorciado', 'Viúvo');
+
 create table pessoas(
 id bigserial not null primary key,
 nome varchar(30) not null,
 nascimento date,
-sexo enum('M','F'),
+estado_civil_pessoa estado_civil,
 peso decimal(5,2),
 altura decimal(3,2),
 nacionalidade varchar(20) default 'Brasil',
