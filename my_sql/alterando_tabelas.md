@@ -28,8 +28,8 @@ drop column <coluna>
 
 ## Renomeando coluna
 ```sql
-alter table pessoas
-change <column_name> <new_name>;
+ALTER TABLE <nome_tabela>
+RENAME COLUMN <column_name> TO <new_name>;
 ```
 
 ## Mudando tipo de dado na coluna 
