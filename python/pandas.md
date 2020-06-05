@@ -64,13 +64,23 @@ user_cols = ['user_id', 'age', 'gender', 'occupation', 'zip_code']
 df = pd.read_csv('http://bit.ly/movieusers', sep='|', header=None, names = user_cols)
 ```
 
-## SQL
+## SQL Table
 
 ```python
 from sqlalchemy import create_engine
 engine = create_engine('sqlite:///:memory:')
-data = pd.read_sql_table('desired_table', engine)
+data = pd.read_sql_table('desired_table', engine, columns=['coluna1','coluna2'])
 df = pd.read_sql_table('customers',engine)
+```
+## SQL Query
+
+```python
+query = '''
+SELECT customers.name, customers.phone_number, orders.name, orders.amount
+FROM customers INNER JOIN orders
+ON customers.id=orders.customer_id
+'''
+df = pd.read_sql_query(query,engine)
 ```
 
 # Exportando um dataframe
@@ -83,6 +93,20 @@ df.to_csv('/content/drive/My Drive/Colab Notebooks/us_companies.csv', index=Fals
 ## SQL
 
 ```python
+# Renomeia as colunas pra ficarem iguais as da Tabela no SQL
+
+df.rename(columns={
+    'Customer Name': 'name',
+    'Customer Phone': 'phone_number'
+}, inplace=True)
+
+
+df.to_sql(
+    name='customers', # database table name
+    con=engine,
+    if_exists='append',
+    index=False
+)
 
 ```
 
