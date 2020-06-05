@@ -58,15 +58,32 @@ df_list['Net Income'].is_monotonic_increasing
 ```
 # Importando um dataframe 
 
+## CSV
 ```python
 user_cols = ['user_id', 'age', 'gender', 'occupation', 'zip_code']
 df = pd.read_csv('http://bit.ly/movieusers', sep='|', header=None, names = user_cols)
 ```
 
-# Exportando um dataframe
+## SQL
 
 ```python
+from sqlalchemy import create_engine
+engine = create_engine('sqlite:///:memory:')
+data = pd.read_sql_table('desired_table', engine)
+df = pd.read_sql_table('customers',engine)
+```
+
+# Exportando um dataframe
+
+## CSV
+```python
 df.to_csv('/content/drive/My Drive/Colab Notebooks/us_companies.csv', index=False)
+```
+
+## SQL
+
+```python
+
 ```
 
 # Alterando o Header
