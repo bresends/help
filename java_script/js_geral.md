@@ -40,7 +40,7 @@ n.toString()
 
 # Métodos de Strings
 ```javascript
-var.lenght
-var.toUpperCase()
-var.LowerCase()
+str.lenght
+str.toUpperCase()
+str.LowerCase()
 ```
