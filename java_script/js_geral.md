@@ -41,6 +41,6 @@ n.toString()
 # Métodos de Strings
 ```javascript
 var.lenght
-var.toUpeerCase()
+var.toUpperCase()
 var.LowerCase()
 ```
