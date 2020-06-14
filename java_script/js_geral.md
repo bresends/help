@@ -5,6 +5,8 @@
 
 window.alert('Minha primeira mensagem!')
 window.confirm('Está gostando de JS?')
+document.write('Minha mensagem')
+document.writeln('Minha mensagem')
 
 ```
 
