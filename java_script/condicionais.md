@@ -32,3 +32,17 @@ else if (condição2){
 if (vel < 3 && vel > 1){
 }
 ```
+
+# Switch 
+```javascript
+switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default: // Funciona como Else
+    // code block
+}
+```
