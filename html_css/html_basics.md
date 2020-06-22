@@ -3,7 +3,7 @@
 > * O uso do Style não deixa o CSS mudar o tamanho. 
 >  * Pode usar GIF também 
 ```html
-<img src="html5.gif" alt="HTML5 Icon" width="128" height="128">
+<img src="html5.gif" alt="HTML5 Icon" width="100%" height="128">
 <img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
 <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
 ```
