@@ -31,3 +31,31 @@ div {
 }
 ```
 
+# Tamanhos
+```css
+div {
+    font-size: 30px; /* Tamanho absoluto */
+    font-size: 30%; /* Tamanho relativo à classe mãe (tem que estar dentro dela) */
+    font-size: 2em; /* Tamanho Relativo à classe mãe */
+    width: 50vw; /* Responsivo ao tamanho EXATO da tela */
+    height: 5vh;
+    min-height: 15vh; /* Se tamanho do elemento for menor que esse valor ele se mantém */
+    min-height: calc(100px - 15vh); /* Faz conta pra fazer coisas se encaixarem no que for necessário */
+
+}
+```
+
+# Margens
+
+## Tirando margens do navegador
+
+```css
+/* Elemento mãe do DOM */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+```
+
+
