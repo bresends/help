@@ -1,3 +1,8 @@
+# Capturando 
+```html
+<form action="..." method="...">
+</form>
+```
 # Caixa de Entrada
 ```html
 <input type="text" id="firstname" name="firstname">
@@ -26,11 +31,25 @@ The cat!
 ```
 
 # Botões
+
+## Regular
 ```html
 <button type="button" onclick="alert('Hello World!')">Click Me!</button>
-</textarea>
 ```
 
+## Bolinha
+```html
+// Nomes tem que ser iguais, senão ele deixa selecionar vários
+<input type="radio" name="hue" id="" value="retorno"> Bolinha1
+<input type="radio" name="hue" id="" value="retorno"> Bolinha2
+```
+
+## Checkbox
+```html
+// Nomes tem que ser iguais, senão ele deixa selecionar vários
+<input type="checkbox" name="hue" id="" value="retorno"> Bolinha1
+<input type="checkbox" name="hue" id="" value="retorno"> Bolinha2
+```
 
 # Menu 
 ```html
