@@ -19,17 +19,17 @@
 ```css
 div {
     text-transform: uppercase;
+    text-aligment: center;
+    text-indent: 50px; /* Tamanho do parágrafo */
+    line-height: 1em;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    text-decoration: underline; /* Tira pro exemplo o underline dos links */
+    text-decoration: none; /* Tira pro exemplo o underline dos links */
     border: 3px solid black;
 }
 ```
 
-# Cores 
-```css
-div {
-    text-transform: uppercase;
-    border: 3px solid black;
-}
-```
 
 # Tamanhos
 ```css
@@ -57,5 +57,14 @@ div {
     box-sizing: border-box;
 }
 ```
+
+## Fazendo lista mas sem os pontos 
+```css
+/* Elemento mãe do DOM */
+ul li {
+    list-style-type: none;
+}
+
+
 
 
