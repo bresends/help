@@ -37,3 +37,21 @@ h1{
 
 }
 ```
+
+# CSS Flexbox
+
+## justify-content
+
+* __flex-start__: Items align to the left side of the container.
+* __flex-end__: Items align to the right side of the container.
+* __center__: Items align at the center of the container.
+* __space-between__: Items display with equal spacing between them.
+* __space-around__ : Items display with equal spacing around them.
+
+##  align-items
+
+* __flex-start__: Items align to the top of the container.
+* __flex-end__: Items align to the bottom of the container.
+* __center__: Items align at the vertical center of the container.
+* __baseline__: Items display at the baseline of the container.
+* __stretch__: Items are stretched to fit the container.
