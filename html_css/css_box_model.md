@@ -42,16 +42,30 @@ h1{
 
 ## justify-content
 
-* __flex-start__: Items align to the left side of the container.
-* __flex-end__: Items align to the right side of the container.
-* __center__: Items align at the center of the container.
-* __space-between__: Items display with equal spacing between them.
-* __space-around__ : Items display with equal spacing around them.
+```css
+div{
+    display: flex;
+    
+    justify-content: flex-start; /* Items align to the left side of the container. */
+    justify-content: flex-end; /* Items align to the right side of the container. */
+    justify-content: center; /* Items align at the center of the container. */
+    justify-content: space-between; /* Items display with equal spacing between them. */
+    justify-content: space-around; /* Items display with equal spacing around them. */
+   
+}
+```
 
 ##  align-items
 
-* __flex-start__: Items align to the top of the container.
-* __flex-end__: Items align to the bottom of the container.
-* __center__: Items align at the vertical center of the container.
-* __baseline__: Items display at the baseline of the container.
-* __stretch__: Items are stretched to fit the container.
+```css
+div{
+    display: flex;
+    
+    align-items: flex-start; /* Items align to the top of the container. */
+    align-items: flex-end; /* Items align to the bottom of the container. */
+    align-items: center; /* Items align at the vertical center of the container. */
+    align-items:baseline; /* Items display at the baseline of the container. */
+    align-items: stretch; /* Items are stretched to fit the container. */
+   
+}
+```
