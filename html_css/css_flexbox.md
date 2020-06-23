@@ -15,7 +15,7 @@ div{
 }
 ```
 
-##  align-items
+##  align-items & align-self
 
 ```css
 div{
@@ -55,6 +55,19 @@ div{
     flex-wrap: nowrap; /* Every item is fit to a single line. */
     flex-wrap: wrap; /* Items wrap around to additional lines. */
     flex-wrap: wrap-reverse; /* Items wrap around to additional lines in reverse. */
+   
+}
+
+```
+
+## flex-flow (wrap + direction)  
+
+
+```css
+div{
+    display: flex;
+    
+    flex-flow: row wrap
    
 }
 
