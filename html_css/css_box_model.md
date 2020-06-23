@@ -64,8 +64,22 @@ div{
     align-items: flex-start; /* Items align to the top of the container. */
     align-items: flex-end; /* Items align to the bottom of the container. */
     align-items: center; /* Items align at the vertical center of the container. */
-    align-items:baseline; /* Items display at the baseline of the container. */
+    align-items: baseline; /* Items display at the baseline of the container. */
     align-items: stretch; /* Items are stretched to fit the container. */
    
 }
 ```
+
+## flex-direction
+
+div{
+    display: flex;
+    
+    flex-direction: row; /* Items are placed the same as the text direction. */
+    flex-direction: row-reverse; /* Items are placed opposite to the text direction. */
+    flex-direction: column; /* Items are placed top to bottom. */
+    flex-direction: column-reverse; /* Items are placed bottom to top. */
+   
+}
+
+
