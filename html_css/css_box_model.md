@@ -72,6 +72,7 @@ div{
 
 ## flex-direction
 
+```css
 div{
     display: flex;
     
