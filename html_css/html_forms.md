@@ -40,7 +40,7 @@ The cat!
 ## Bolinha
 ```html
 // Nomes tem que ser iguais, senão ele deixa selecionar vários
-<input type="radio" name="hue" id="" value="retorno"> Bolinha1
+<input type="radio" name="hue" id="" value="retorno" checked="checked"> Bolinha1
 <input type="radio" name="hue" id="" value="retorno"> Bolinha2
 ```
 
