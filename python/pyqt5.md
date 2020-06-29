@@ -1,3 +1,9 @@
+
+# Convertendo arquivos 
+```shell
+pyuic5 -x nome.ui -o nome.py
+```
+
 # Programa Base
 
 ```python
@@ -54,7 +60,3 @@ b1.setText("click me")
 b1.move(100,100) # to move the button
 ```
 
-# Convertendo arquivos 
-```python
-pyuic5 -x nome.ui -o nome.py
-```
