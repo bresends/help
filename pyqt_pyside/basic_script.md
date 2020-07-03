@@ -45,18 +45,3 @@ if __name__ == "__main__":
     sys.exit(app.exec_())
 ```
 
-# Labels (escrita dentro do window) 
-
-```python
-label = QtWidgets.QLabel(target)
-label.setText('My label')
-label.move(50,50)
-```
-# Buttons
-
-```python
-b1 = QtWidgets.QPushButton(win)
-b1.setText("click me")
-b1.move(100,100) # to move the button
-```
-
