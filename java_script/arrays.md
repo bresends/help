@@ -26,9 +26,9 @@ for (let i in array){
 }
 ```
 
-# Buscando valores 
+# Buscando posição dos elementos
 
 
 ```javascript
-array.indexOf(posicao)
+array.indexOf(busca)
 ```
