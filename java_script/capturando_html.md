@@ -28,16 +28,22 @@ onload='' // Quando página termina de carregar
 ## por Tag
 ```javascript
 let paragraph = window.document.getElementsByTagName('p')[0]
+```
 
 // Printando Texto sem formação 
+```javascript
 window.document.write(paragraph.innerText)
-
+```
 // Printando Texto com formatação
+```javascript
 window.document.write(paragraph.innterHTML)
+```
 
 // Mudando cor
+```javascript
 paragraph.style.color = 'blue'
 ```
+
 ## por ID
 ```javascript
 let a = window.document.getElementById('nome_id')

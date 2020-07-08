@@ -1,3 +1,10 @@
+# Convertendo arquivos 
+```shell
+pyuic5 -x nome.ui -o nome.py
+pyside2-uic mainwindow.ui > ui_mainwindow.py
+```
+> https://doc.qt.io/qtforpython/tutorials/basictutorial/uifiles.html
+
 # Classes 
 > É necessário sempre criar 1 único aplicativo 
 
