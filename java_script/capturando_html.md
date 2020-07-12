@@ -65,9 +65,9 @@ let d = window.document.querySelector('div.class')
 
 // Vários elementos 
 let d = window.document.querySelectorAll('div#id')
+
 // Mudando atributos
 d.style.background = 'blue'
-window.document.getElementsByTagName()
 ```
 
 
