@@ -46,3 +46,8 @@ str.lenght
 str.toUpperCase()
 str.LowerCase()
 ```
+
+# Usando comparadores 
+
+Não use '==' nem '!=' em js
+É '===' ou '!=='
