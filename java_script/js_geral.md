@@ -49,5 +49,5 @@ str.LowerCase()
 
 # Usando comparadores 
 
-Não use '==' nem '!=' em js
-É '===' ou '!=='
+> - Não use '==' nem '!=' em js
+> - É '===' ou '!=='
