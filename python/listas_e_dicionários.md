@@ -1,50 +1,6 @@
 # Listas
 
-## Adicionando itens 
-
-```python
-# No fim
-lanche = ['pão', 'pudim', 'broa']
-lanche.append('bolo')
-
-# Em posição específica
-lanche.insert(0,'pão de queijo') # dá a posição e depois o item a ser adicionado
-```
-
-## Adicionando uma lista dentro de outra lista, mas como elementos individuais, não outra lista
-
-```python
-# Assim joga a lista
-sobremesa = ['sorvete']
-sobremesa.append(lanche)
-
-# Assim joga só os valores
-sobremesa = ['sorvete']
-sobremesa.extend(lanche)
-```
-
-## Apagando itens
-```python
-
-# Aqui ele vai na lista e remove o item que vc desejar (independente da posição do mesmo)
-
-lanche.remove('broa')
-
-# Checando se o item está na lista antes de apagar pra não dar erro
-if 'pudim' in lanche:
-  lanche.remove('pudim')
-```
-
-## Apagando itens
-```python
-# Pop
-lanche.pop(0) #se estiver sem o índice, ele remove o último elemento da lista
-
-# Del
-del lanche[0]
-```
-
-# List Compreehension
+## List Compreehension
 
 > Lógica: ``` [(x*x) for x in lista] ```
 
