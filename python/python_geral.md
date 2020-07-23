@@ -20,16 +20,6 @@ with open('arquivo.txt', 'w') as f:
     f.write(f'{item} \n')
 ```
 
-# Browser 
-
-```python
-# Abrir url em nova janela 
-
-import webbrowser
-webbrowser.open('http://example.com')
-
-```
-
 # Tratamento de Erros 
 
 ```python
