@@ -1,33 +1,3 @@
-# Listas
-
-## List Compreehension
-
-> Lógica: ``` [(x*x) for x in lista] ```
-
-```python
-# Fazendo replace em uma string
-lista_atualizada = [item.replace('u','Txnchegas').replace('a','@').upper() for item in lista_nomes]
-```
-
-```python
-# Listando todos os números divisíveis por 3 e 8 ao mesmo tempo 
-
-lista_item = list(range(100))
-
-lista_filtrada = [(item) for item in lista_item if item % 3 == 0 if item % 8 == 0]
-```
-
-```python
-# Aplicando função
-# Lista
-prices = [1.09, 23.56, 57.84, 4.56, 6.78]
-
-def discount(item):
-    return item * (0.9)
-
-final_prices = [discount(i) for i in prices]
-```
-
 # Dicionários
 
 ## Criando um dicionário
